@@ -4,6 +4,7 @@
 	--color-primary: var(--wp--preset--color--primary, oklch(0.35 0.08 250));
 	--color-secondary: var(--wp--preset--color--secondary, oklch(0.55 0.12 220));
 	--color-tertiary: var(--wp--preset--color--tertiary, oklch(0.62 0.2 45));
+	--color-elevated: var(--wp--preset--color--elevated, oklch(1 0 0));
  
 	/* --- Foreground / Text --- */
 	--color-foreground: var(--wp--preset--color--foreground, oklch(0.2 0.01 250));
@@ -11,15 +12,20 @@
 	--color-primary-foreground: var(--wp--preset--color--primary-foreground, oklch(0.99 0 0));
 	--color-secondary-foreground: var(--wp--preset--color--secondary-foreground, oklch(0.99 0 0));
 	--color-tertiary-foreground: var(--wp--preset--color--tertiary-foreground, oklch(0.99 0 0));
+	--color-elevated-foreground: var(--wp--preset--color--elevated-foreground, oklch(0.5 0.02 250));
 
 	/* --- Backgrounds / Surfaces --- */
 	--color-background: var(--wp--preset--color--background, oklch(0.99 0 0));
 	--color-surface: var(--wp--preset--color--surface, oklch(1 0 0));
 	--color-subtle: var(--wp--preset--color--subtle, oklch(0.96 0.01 220));
-	--color-card: var(--wp--preset--color--card, oklch(0.98 0 0));
+	--color-card: var(--wp--preset--color--card, oklch(1 0 0));
 	--color-card-foreground: var(--wp--preset--color--card-foreground, oklch(0.2 0.01 250));
 	--color-muted: var(--wp--preset--color--muted, oklch(0.94 0.01 250));
 	--color-muted-foreground: var(--wp--preset--color--muted-foreground, oklch(0.5 0.02 250));
+
+	/* --- Labels --- */
+	--color-label: var(--wp--preset--color--label, oklch(0.6 0.14 50));
+	--color-label-foreground: var(--wp--preset--color--label-foreground, oklch(0.2 0.01 250));
 
 	/* --- Borders --- */
 	--color-border: var(--wp--preset--color--border, oklch(0.9 0.01 250));
@@ -45,6 +51,9 @@
 	/* Aliases */
 	--accent: var(--color-tertiary);
   	--accent-foreground: var(--color-tertiary-foreground);
+
+	--label: var(--color-label);
+	--label-foreground: var(--color-label-foreground);
 
 	--state-success: var(--color-success);
 	--state-warning: var(--color-warning);

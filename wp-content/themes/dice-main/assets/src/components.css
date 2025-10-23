@@ -63,12 +63,12 @@
 	}
 
 	.site-header__list-desktop a {
-		@apply text-sm font-medium text-foreground/80 !no-underline hover:text-foreground transition-colors;
+		@apply text-base font-semibold text-foreground/80 !no-underline hover:text-primary transition-colors;
 	}
 
 	.site-header__list-desktop .current-menu-item>a,
 	.site-header__list-desktop .current_page_item>a {
-		@apply text-foreground;
+		@apply text-primary;
 	}
 
 	/* ===== Mobile ===== */

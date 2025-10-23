@@ -4,7 +4,7 @@
         "name": "dice/comparison-table",
         "title": "Comparison Table",
         "category": "dice",
-        "icon": "table-col-after",
+        "icon": "editor-table",
         "description": "Comparison table highlighting featured moving companies.",
         "supports": {
                 "html": false,

@@ -4,7 +4,7 @@
 	"name": "dice/hero",
 	"title": "Hero",
 	"category": "dice",
-	"icon": "index-card",
+	"icon": "format-image",
 	"description": "Prominent landing hero.",
   "supports": {
     "html": false, 

@@ -21,17 +21,22 @@
     "color": {
       "defaultPalette": false,
       "palette": [
-        { "slug": "primary",   "name": "Primary (Accent Orange)",      "color": "#FF7B33" },
+        { "slug": "primary",   "name": "Primary (Orange)",             "color": "#ff7d32" },
         { "slug": "secondary", "name": "Secondary (Navy Text)",        "color": "#00003C" },
-        { "slug": "tertiary",  "name": "Tertiary (Cool Gray)",         "color": "#748F8B" },
+        { "slug": "tertiary",  "name": "Tertiary (Orange)",            "color": "#ff7d32" },
 
         { "slug": "foreground","name": "Foreground",                   "color": "#00003C" },
-        { "slug": "muted-foreground","name": "Muted FG",               "color": "#5B6478" },
+        { "slug": "muted-foreground","name": "Muted FG",               "color": "#454d5d" },
+        { "slug": "elevated-foreground", "name": "Elevated FG",        "color": "#00003C" },
 
-        { "slug": "background","name": "Background",                   "color": "#FFFFFF" },
-        { "slug": "surface",   "name": "Surface",                      "color": "#F0F5F9" },
+        { "slug": "background","name": "Background",                   "color": "#fcfcfc" },
+        { "slug": "surface",   "name": "Surface",                      "color": "#b5edff" },
         { "slug": "subtle",    "name": "Subtle",                       "color": "#F5F7FB" },
-        { "slug": "muted",     "name": "Muted",                        "color": "#E8EDF2" },
+        { "slug": "muted",     "name": "Muted",                        "color": "#f0f5f9" },
+        { "slug": "elevated",  "name": "Elevated",                     "color": "#b5edff" },
+
+        { "slug": "label",     "name": "Label",                        "color": "#d97706" },
+        { "slug": "label-foreground", "name": "Label Foreground",      "color": "#00003C" },
 
         { "slug": "border",    "name": "Border",                       "color": "#D4D9E1" },
         { "slug": "border-strong","name":"Border Strong",              "color": "#B5BBC7" },

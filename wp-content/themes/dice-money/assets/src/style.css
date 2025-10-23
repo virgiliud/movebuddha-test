@@ -18,7 +18,7 @@
 
 @layer components {
   .dice-hero__button {
-    @apply font-semibold rounded-lg;
+    @apply font-semibold;
   }
 
   .dice-hero__image-wrap {

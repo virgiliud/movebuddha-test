@@ -22,7 +22,7 @@
   }
 
   .dice-hero__image-wrap {
-    @apply rounded-xl;
+    @apply rounded-2xl;
   }
 }
 

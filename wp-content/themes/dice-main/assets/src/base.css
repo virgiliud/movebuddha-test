@@ -50,7 +50,7 @@
 
 	/* Links */
 	a {
-		@apply text-primary hover:text-primary/80 transition-colors;
+		@apply hover:text-primary/80 transition-colors;
 	}
 
 	/* Blockquotes */

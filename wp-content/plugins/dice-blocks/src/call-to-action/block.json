@@ -4,7 +4,7 @@
         "name": "dice/call-to-action",
         "title": "Call to Action",
         "category": "dice",
-        "icon": "clipboard",
+        "icon": "megaphone",
         "description": "Call to action form for collecting moving quote requests.",
         "supports": {
                 "html": false,

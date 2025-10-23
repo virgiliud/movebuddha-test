@@ -21,25 +21,30 @@
     "color": {
       "defaultPalette": false,
       "palette": [
-        { "slug": "primary",   "name": "Primary",                  "color": "#008254" },
-        { "slug": "secondary", "name": "Secondary",                "color": "#8CCB32" },
-        { "slug": "tertiary",  "name": "Tertiary",                 "color": "#00682C" },
-        { "slug": "muted",     "name": "Muted",                    "color": "#f3fff2" },
+        { "slug": "primary",   "name": "Primary (Light Green)",       "color": "#005928" },
+        { "slug": "secondary", "name": "Secondary (Dark Green)",      "color": "#00682C" },
+        { "slug": "tertiary",  "name": "Tertiary (Primary Green)",    "color": "#97bf3e" },
 
-        { "slug": "foreground","name": "Foreground",               "color": "#0a0a0a" },
-        { "slug": "muted-foreground","name": "Muted FG",           "color": "#6b7280" },
+        { "slug": "foreground","name": "Foreground",                   "color": "#111111" },
+        { "slug": "muted-foreground","name": "Muted FG",               "color": "#5B6478" },
+        { "slug": "elevated-foreground", "name": "Elevated FG",        "color": "#5b646f" },
 
-        { "slug": "background","name": "Background",               "color": "#ffffff" },
-        { "slug": "surface",   "name": "Surface",                  "color": "#f9fafb" },
-        { "slug": "subtle",    "name": "Subtle",                   "color": "#f3f4f6" },
+        { "slug": "background","name": "Background",                   "color": "#fcfcfc" },
+        { "slug": "surface",   "name": "Surface",                      "color": "#F0F5F9" },
+        { "slug": "subtle",    "name": "Subtle",                       "color": "#F5F7FB" },
+        { "slug": "muted",     "name": "Muted",                        "color": "#edf4ef" },
+        { "slug": "elevated",  "name": "Elevated",                     "color": "#ffffff" },
 
-        { "slug": "border",    "name": "Border",                   "color": "#41ac87" },
-        { "slug": "border-strong","name":"Border Strong",          "color": "#41ac87" },
+        { "slug": "label",     "name": "Label",                        "color": "#ffffff" },
+        { "slug": "label-foreground", "name": "Label FG",              "color": "#97bf3e" },
 
-        { "slug": "success",   "name": "Success",                  "color": "#40ad87" },
-        { "slug": "warning",   "name": "Warning",                  "color": "#f59e0b" },
-        { "slug": "danger",    "name": "Danger",                   "color": "#ef4444" },
-        { "slug": "info",      "name": "Info",                     "color": "#3b82f6" }
+        { "slug": "border",    "name": "Border",                       "color": "#D4D9E1" },
+        { "slug": "border-strong","name":"Border Strong",              "color": "#B5BBC7" },
+
+        { "slug": "success",   "name": "Success",                      "color": "#00AE4D" },
+        { "slug": "warning",   "name": "Warning",                      "color": "#F59E0B" },
+        { "slug": "danger",    "name": "Danger",                       "color": "#EF4444" },
+        { "slug": "info",      "name": "Info",                         "color": "#2563EB" }
       ]
     },
 
