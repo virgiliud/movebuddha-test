@@ -1,0 +1,56 @@
+.wp-block-dice-hero .dice-hero__cta-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wp-block-dice-hero .dice-hero__link-popover {
+  width: 360px;
+  max-width: calc(100vw - 40px);
+}
+
+.wp-block-dice-hero .dice-hero__image-click {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+.wp-block-dice-hero .dice-hero__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 120ms ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.wp-block-dice-hero .dice-hero__image-click:hover .dice-hero__overlay,
+.wp-block-dice-hero .dice-hero__image-click:focus .dice-hero__overlay {
+  opacity: 1;
+}
+
+.wp-block-dice-hero .dice-hero__overlay-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.wp-block-dice-hero .dice-hero__overlay-icon {
+  fill: #fff;
+}
+
+.wp-block-dice-hero .dice-hero__overlay-text {
+  margin-left: 8px;
+  color: #fff;
+}
+
+.wp-block-dice-hero .dice-block__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

@@ -1,0 +1,8 @@
+# macOS Finder metadata
+.DS_Store
+
+# Node.js dependencies
+node_modules/
+
+# Local npm lockfile artifacts
+package-lock.json

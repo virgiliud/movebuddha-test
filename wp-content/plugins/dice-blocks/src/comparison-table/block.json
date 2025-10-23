@@ -1,0 +1,19 @@
+{
+        "$schema": "https://schemas.wp.org/trunk/block.json",
+        "apiVersion": 3,
+        "name": "dice/comparison-table",
+        "title": "Comparison Table",
+        "category": "dice",
+        "icon": "table-col-after",
+        "description": "Comparison table highlighting featured moving companies.",
+        "supports": {
+                "html": false,
+                "anchor": true,
+                "align": [ "full" ]
+        },
+        "attributes": {
+                "align": { "type": "string", "default": "full" }
+        },
+        "editorScript": "file:./index.js",
+        "viewScript": "file:./view.js"
+}

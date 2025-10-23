@@ -1,0 +1,28 @@
+/* Base: the working setup (base path = theme root via ../../) */
+@import "tailwindcss" source("../../");
+
+/* CSS files */
+@import "./tokens.css";
+@import "./base.css";
+@import "./components.css";
+
+/* Includes */
+@source "../../**/*.{php,html,htm,js,jsx,ts,tsx,vue}";
+@source "../../../../plugins/dice-blocks/**/*.{php,js,jsx,ts,tsx}";
+
+/* Excludes */
+@source not "../../assets/**";
+@source not "../../inc/**";
+@source not "../../vendor/**";
+/* node_modules is ignored by default */
+
+/* Common build outputs */
+@source not "../../**/dist/**";
+@source not "../../**/build/**";
+
+/* Minified & generated files */
+@source not "../../**/*.min.js";
+@source not "../../**/*.min.css";
+
+/* Plugin subfolders to skip */
+@source not "../../../../plugins/dice-blocks/build/**";

@@ -1,0 +1,72 @@
+/* Tokens / design variables shared by front-end and editor */
+@theme {
+	/* --- Brand --- */
+	--color-primary: var(--wp--preset--color--primary, oklch(0.35 0.08 250));
+	--color-secondary: var(--wp--preset--color--secondary, oklch(0.55 0.12 220));
+	--color-tertiary: var(--wp--preset--color--tertiary, oklch(0.62 0.2 45));
+ 
+	/* --- Foreground / Text --- */
+	--color-foreground: var(--wp--preset--color--foreground, oklch(0.2 0.01 250));
+	--color-muted-foreground: var(--wp--preset--color--muted-foreground, oklch(0.5 0.02 250));
+	--color-primary-foreground: var(--wp--preset--color--primary-foreground, oklch(0.99 0 0));
+	--color-secondary-foreground: var(--wp--preset--color--secondary-foreground, oklch(0.99 0 0));
+	--color-tertiary-foreground: var(--wp--preset--color--tertiary-foreground, oklch(0.99 0 0));
+
+	/* --- Backgrounds / Surfaces --- */
+	--color-background: var(--wp--preset--color--background, oklch(0.99 0 0));
+	--color-surface: var(--wp--preset--color--surface, oklch(1 0 0));
+	--color-subtle: var(--wp--preset--color--subtle, oklch(0.96 0.01 220));
+	--color-card: var(--wp--preset--color--card, oklch(0.98 0 0));
+	--color-card-foreground: var(--wp--preset--color--card-foreground, oklch(0.2 0.01 250));
+	--color-muted: var(--wp--preset--color--muted, oklch(0.94 0.01 250));
+	--color-muted-foreground: var(--wp--preset--color--muted-foreground, oklch(0.5 0.02 250));
+
+	/* --- Borders --- */
+	--color-border: var(--wp--preset--color--border, oklch(0.9 0.01 250));
+	--color-border-strong: var(--wp--preset--color--border-strong, var(--color-primary));
+
+	/* --- States --- */
+	--color-success: var(--wp--preset--color--success, oklch(0.55 0.15 145));
+	--color-warning: var(--wp--preset--color--warning, oklch(0.65 0.18 75));
+	--color-danger:  var(--wp--preset--color--danger,  oklch(0.55 0.22 25));
+	--color-info:    var(--wp--preset--color--info,    oklch(0.55 0.12 220));
+
+	/* --- Typography (tokens that WP can override) --- */
+	--font-body: var(--wp--preset--font-family--body,
+		Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif);
+
+	 --font-display: var(--wp--preset--font-family--display,
+    "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif);
+
+	/* Map Tailwind utilities to tokens */
+	--font-sans: var(--font-body);
+	--font-serif: var(--font-display);
+
+	/* Aliases */
+	--accent: var(--color-tertiary);
+  	--accent-foreground: var(--color-tertiary-foreground);
+
+	--state-success: var(--color-success);
+	--state-warning: var(--color-warning);
+	--state-danger:  var(--color-danger);
+	--state-info:    var(--color-info);
+
+	/* State */
+	--color-state-success: var(--state-success);
+	--color-state-warning: var(--state-warning);
+	--color-state-danger:  var(--state-danger);
+	--color-state-info:    var(--state-info);
+
+	/* Utility aliases */
+	--background: var(--color-background);
+	--foreground: var(--color-foreground);
+	--muted: var(--color-muted);
+	--muted-foreground: var(--color-muted-foreground);
+	--border: var(--color-border);
+	--card: var(--color-card);
+	--card-foreground: var(--color-card-foreground);
+	--surface: var(--color-surface);
+	--subtle: var(--color-subtle);
+	--color-accent: var(--accent);
+  	--color-accent-foreground: var(--color-tertiary-foreground);
+}

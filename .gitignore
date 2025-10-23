@@ -1,0 +1,69 @@
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
+wp-config.php
+
+# Example themes
+/wp-content/themes/twenty*/
+
+# Example plugin
+/wp-content/plugins/hello.php
+
+# Uploads
+/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+# -------------------------
+# THEMES
+# -------------------------
+!wp-content/
+!wp-content/themes/
+!wp-content/themes/dice-main/**
+!wp-content/themes/dice/
+!wp-content/themes/dice-money/
+!wp-content/themes/dice-nerdwallet/
+
+# Theme build artifacts
+wp-content/themes/dice-main/assets/build/
+wp-content/themes/dice-money/assets/build/
+wp-content/themes/dice-nerdwallet/assets/build/
+
+# -------------------------
+# PLUGINS
+# -------------------------
+!wp-content/plugins/
+!wp-content/plugins/dice-blocks/
+!wp-content/plugins/dice-blocks/**
+
+# Plugin build artifacts
+wp-content/plugins/dice-blocks/build/
+
+
+# macOS artifacts
+.DS_Store
+local-xdebuginfo.php
+
+# Node.js build outputs
+**/node_modules/

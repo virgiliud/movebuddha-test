@@ -1,0 +1,28 @@
+/*
+ * Tailwind overrides specific to the NerdWallet child theme.
+ *
+ * The parent theme already registers the Tailwind base and preflight layers so we only import the utility layer here.
+ * This still lets us use @apply with any Tailwind utility.
+ */
+
+/* Import only utilities (no base/preflight) */
+@import "tailwindcss/utilities";
+
+/* Let @apply find all Tailwind utilities */
+@reference "tailwindcss";
+
+/* Global sources to scan */
+@source "../../**/*.{php,html,htm,js,jsx,ts,tsx,vue}";
+@source not "../../node_modules/**";
+@source not "../../vendor/**";
+
+@layer components {
+  .dice-hero__button {
+    @apply font-semibold rounded-lg;
+  }
+
+  .dice-hero__image-wrap {
+    @apply rounded-lg;
+  }
+}
+

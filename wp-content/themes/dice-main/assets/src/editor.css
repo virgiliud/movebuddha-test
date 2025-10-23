@@ -1,0 +1,12 @@
+@import "./tokens.css";
+/* Rebase Tailwind to wp-content */
+@import "tailwindcss" source("../../../../");
+@import "./base.css";
+
+/* Scan dice-blocks plugin files */
+@source "plugins/dice-blocks/src/**/*.{js,jsx,ts,tsx,php}";
+
+/* Post Title block in editor */
+.editor-styles-wrapper .wp-block-post-title {
+  margin-bottom: 3rem;
+}

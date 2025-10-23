@@ -1,0 +1,126 @@
+################################################################################
+# WordPress - ignore core, configuration, examples, uploads and logs.
+# Source: https://github.com/github/gitignore/blob/main/WordPress.gitignore
+################################################################################
+
+# Core
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+/wp-includes/
+# Keep repository root clean of WordPress core files.
+#/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
+wp-config.php
+
+# Example themes
+/wp-content/themes/twenty*/
+
+# Example plugin
+/wp-content/plugins/hello.php
+
+# Uploads
+/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes
+
+################################################################################
+# My Theme additions
+################################################################################
+
+# Node & Front-end
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Tailwind / PostCSS build artifacts
+/assets/build/
+/assets/.cache/
+/.postcssrc*
+# Allow committed Tailwind/PostCSS configuration files so builds work across environments.
+/postcss.config.js
+/postcss.config.mjs
+
+# Composer
+/vendor/
+composer.lock
+
+# Environment / local setup
+.env
+.env.*
+*.local
+*.env
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS / Misc
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Logs / Reports
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+*.pid
+*.seed
+*.pid.lock
+
+# Archives / compressed files
+*.zip
+*.tar.gz
+*.tgz
+
+# Tests / coverage
+/coverage/
+.clover/
+.phpunit.result.cache
+
+################################################################################
+# WordPress Theme Output
+################################################################################
+# Ignore compiled assets locally (commit them only for production deploys)
+#/assets/build
+
+################################################################################
+# CI / Artifacts
+################################################################################
+# Optional: ignore build artifacts from CI/CD
+dist/
+build/

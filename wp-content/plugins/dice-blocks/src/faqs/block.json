@@ -1,0 +1,19 @@
+{
+        "$schema": "https://schemas.wp.org/trunk/block.json",
+        "apiVersion": 3,
+        "name": "dice/faqs",
+        "title": "FAQs",
+        "category": "dice",
+        "icon": "editor-help",
+        "description": "Frequently asked questions section with accordion toggles.",
+        "supports": {
+                "html": false,
+                "anchor": true,
+                "align": [ "full" ]
+        },
+        "attributes": {
+                "align": { "type": "string", "default": "full" }
+        },
+        "editorScript": "file:./index.js",
+        "viewScript": "file:./view.js"
+}

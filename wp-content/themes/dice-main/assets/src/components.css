@@ -1,0 +1,190 @@
+@layer components {
+
+	/* ===== Layout ===== */
+	.wrapper {
+		@apply mx-auto py-8 px-4 lg:py-12 md:px-6 lg:px-8 max-w-7xl;
+	}
+
+	/* ===== Header ===== */
+	.site-header {
+		@apply w-full border-b border-border bg-background shadow-sm;
+	}
+
+	/* Container */
+	.site-header__inner {
+		@apply container mx-auto max-w-7xl;
+	}
+
+	/* Layout row */
+	.site-header__layout {
+		@apply relative flex h-16 items-center justify-between px-4 md:px-6 lg:px-8;
+	}
+
+	/* --- Brand --- */
+	.site-header__brand {
+		@apply flex items-center gap-3 min-w-0;
+	}
+
+	.site-header__logo img {
+		@apply block max-h-9 w-auto;
+	}
+
+	.site-header__logo-placeholder {
+		@apply h-9 w-9 rounded-lg bg-primary flex items-center justify-center shrink-0 shadow-sm;
+	}
+
+	.site-header__logo-placeholder span {
+		@apply text-primary-foreground font-bold text-lg;
+	}
+
+	.site-header__title {
+		@apply text-xl font-bold text-foreground tracking-tight truncate;
+	}
+
+	.site-header__title a {
+		@apply hover:text-primary !no-underline transition-colors;
+	}
+
+	.site-header__tagline {
+		@apply sr-only;
+	}
+
+	/* ===== Desktop Nav (md+) ===== */
+	.site-header__nav-desktop {
+		@apply hidden md:block;
+	}
+
+	.site-header__list-desktop {
+		@apply flex items-center gap-8 m-0 p-0 list-none;
+	}
+
+	.site-header__list-desktop>li {
+		@apply m-0;
+	}
+
+	.site-header__list-desktop a {
+		@apply text-sm font-medium text-foreground/80 !no-underline hover:text-foreground transition-colors;
+	}
+
+	.site-header__list-desktop .current-menu-item>a,
+	.site-header__list-desktop .current_page_item>a {
+		@apply text-foreground;
+	}
+
+	/* ===== Mobile ===== */
+
+	/* Hidden controlling checkbox */
+	.site-header__checkbox {
+		@apply hidden;
+	}
+
+	/* Hamburger button (visible only on mobile) */
+	.site-header__toggle {
+		@apply md:hidden flex flex-col ml-auto items-center justify-center gap-1.5 cursor-pointer p-2 rounded-lg transition-colors;
+		@apply hover:bg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+	}
+
+	.site-header__toggle span {
+		@apply block h-0.5 w-6 bg-foreground transition-all;
+	}
+
+	/* Animate hamburger -> X using sibling to the checkbox */
+	#mobile-menu-toggle:checked+.site-header__toggle span:nth-child(1) {
+		@apply rotate-45 translate-y-2;
+	}
+
+	#mobile-menu-toggle:checked+.site-header__toggle span:nth-child(2) {
+		@apply opacity-0;
+	}
+
+	#mobile-menu-toggle:checked+.site-header__toggle span:nth-child(3) {
+		@apply -rotate-45 -translate-y-2;
+	}
+
+	/* Mobile container */
+	.site-header__mobile {
+		@apply md:hidden;
+	}
+
+	/* By default hidden, shown when checkbox checked */
+	.site-header__mobile-panel {
+		@apply hidden absolute top-full inset-x-0 bg-background border-b border-border shadow-lg z-50;
+	}
+
+	/* Reveal the panel when toggled */
+	#mobile-menu-toggle:checked~.site-header__mobile .site-header__mobile-panel {
+		@apply flex;
+	}
+
+	/* Inner container like JSX */
+	.site-header__mobile-inner {
+		@apply container mx-auto px-4 md:px-6 lg:px-8 py-4 flex flex-col gap-4;
+	}
+
+	/* Mobile menu list/links */
+	.site-header__list-mobile {
+		@apply flex flex-col gap-2 m-0 p-0 list-none;
+	}
+
+	.site-header__list-mobile>li {
+		@apply m-0;
+	}
+
+	.site-header__list-mobile a {
+		@apply block text-sm font-medium text-foreground !no-underline hover:text-primary transition-colors py-2;
+	}
+
+	.site-header__list-mobile .current-menu-item>a,
+	.site-header__list-mobile .current_page_item>a {
+		@apply text-primary;
+	}
+
+	/* Prevent body shift when panel overlays content */
+	@media (max-width: 767px) {
+		.site-header__layout {
+			@apply z-50;
+		}
+	}
+
+	/* ===== Footer ===== */
+	.site-footer {
+		/* wrapper */
+		@apply bg-white border-t-2 border-border pt-16 pb-5 md:pt-20 md:pb-10;
+	}
+
+	/* content wrapper */
+	.site-footer__content {
+		@apply max-w-5xl mx-auto space-y-10;
+	}
+
+	/* --- Disclaimer --- */
+	.site-footer__disclaimer {
+		@apply text-sm md:text-base text-center text-muted-foreground leading-relaxed;
+	}
+
+	.site-footer__disclaimer strong {
+		@apply text-foreground font-semibold;
+	}
+
+	/* --- Navigation --- */
+	.site-footer__nav {
+		@apply text-center;
+	}
+
+	.site-footer__list {
+		@apply flex flex-wrap items-center justify-center gap-8 md:gap-10 m-0 p-0;
+	}
+
+	.site-footer__list>li {
+		@apply m-0 p-0;
+	}
+
+	.site-footer__list a {
+		@apply text-sm md:text-base font-medium text-foreground !no-underline hover:text-primary transition-colors;
+	}
+
+	/* --- Copyright --- */
+	.site-footer__copy {
+		@apply text-center text-sm md:text-base text-muted-foreground pt-6 border-t-2 border-border;
+	}
+}

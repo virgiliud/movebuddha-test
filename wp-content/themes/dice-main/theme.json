@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Inter",
+          "slug": "body",
+          "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif"
+        },
+        {
+          "name": "DM Sans",
+          "slug": "display",
+          "fontFamily": "DM Sans, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif"
+        }
+      ],
+      "fluid": true
+    },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "primary",   "name": "Primary",   "color": "#143c62" },
+        { "slug": "secondary", "name": "Secondary", "color": "#06b6d4" },
+        { "slug": "tertiary",  "name": "Tertiary",  "color": "#e14f00" },
+        { "slug": "muted",     "name": "Muted",     "color": "#eff1f5" },
+
+        { "slug": "foreground","name": "Foreground","color": "#0a0a0a" },
+        { "slug": "muted-foreground","name": "Muted FG","color": "#6b7280" },
+
+        { "slug": "background","name": "Background","color": "#fcfcfc" },
+        { "slug": "surface",   "name": "Surface",   "color": "#f9fafb" },
+        { "slug": "subtle",    "name": "Subtle",    "color": "#f3f4f6" },
+
+        { "slug": "border",    "name": "Border",    "color": "#e5e7eb" },
+        { "slug": "border-strong","name":"Border Strong","color":"#4f46e5" },
+
+        { "slug": "success",   "name": "Success",   "color": "#16a34a" },
+        { "slug": "warning",   "name": "Warning",   "color": "#f59e0b" },
+        { "slug": "danger",    "name": "Danger",    "color": "#ef4444" },
+        { "slug": "info",      "name": "Info",      "color": "#3b82f6" }
+      ]
+    },
+
+    "border": {
+      "color": false,
+      "radius": false,
+      "style": false,
+      "width": false
+    },
+
+    "layout": {
+      "contentSize": "80rem",
+      "wideSize": "1200px"
+    }
+  },
+
+  "styles": {
+    "color": {
+      "text": "var(--wp--preset--color--foreground)",
+      "background": "var(--wp--preset--color--background)"
+    }
+  }
+}

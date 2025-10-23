@@ -1,0 +1,65 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "dice/hero",
+	"title": "Hero",
+	"category": "dice",
+	"icon": "index-card",
+	"description": "Prominent landing hero.",
+  "supports": {
+    "html": false, 
+    "anchor": true,
+    "align": [ "full" ]
+  },
+
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Best Moving Companies in California"
+		},
+		"description": {
+			"type": "string",
+			"default": "Compare top-rated, licensed movers to find the right company for your California move."
+		},
+		"badgeText": {
+			"type": "string",
+			"default": "2025 Rankings"
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "Get Free Moving Quotes"
+		},
+		"buttonUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"buttonOpensInNewTab": {
+			"type": "boolean",
+			"default": false
+		},
+		"featuredLabel": {
+			"type": "string",
+			"default": "Featured in:"
+		},
+		"featuredItems": {
+			"type": "array",
+			"default": [
+				{ "text": "CNBC" },
+				{ "text": "USA Today" },
+				{ "text": "Realtor.com" }
+			]
+		},
+		"imageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"imageAlt": {
+			"type": "string",
+			"default": "Professional movers loading a moving truck"
+		},
+    "align": { "type": "string", "default": "full" }
+	},
+	"style": "file:./style-index.css",
+	"editorStyle": "file:./index.css",
+	"editorScript": "file:./index.js"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "dice-nerdwallet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./assets/src/style.css -o ./assets/build/style.css",
+    "dev": "npx @tailwindcss/cli -i ./assets/src/style.css -o ./assets/build/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.15",
+    "@tailwindcss/cli": "^4.1.15"
+  }
+}

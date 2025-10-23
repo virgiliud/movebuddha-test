@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<ruleset name="dice">
+  <description>WordPress coding standards for the Dice theme.</description>
+
+  <!-- Scope -->
+  <file>./</file>
+
+  <!-- Output / perf -->
+  <arg name="basepath" value="."/>
+  <arg name="parallel" value="8"/>
+  <arg value="p"/>  <!-- progress -->
+  <arg value="s"/>  <!-- show sniff codes -->
+  <arg name="extensions" value="php"/> <!-- only PHP files -->
+
+  <!-- Standards -->
+  <rule ref="WordPress-Core"/>
+  <rule ref="WordPress-Extra"/>
+  <rule ref="WordPress-Docs"/>
+
+  <!-- PHP compatibility (adjust if needed) -->
+  <config name="testVersion" value="7.4-8.3"/>
+
+  <!-- WP compatibility (set your minimum) -->
+  <config name="minimum_supported_wp_version" value="6.2"/>
+
+  <!-- i18n: enforce theme text domain -->
+  <rule ref="WordPress.WP.I18n">
+    <properties>
+      <property name="text_domain" type="array">
+        <element value="dice"/>
+      </property>
+    </properties>
+  </rule>
+
+  <!-- Ignore build/vendor/noise -->
+  <exclude-pattern>vendor/*</exclude-pattern>
+  <exclude-pattern>node_modules/*</exclude-pattern>
+  <exclude-pattern>assets/build/*</exclude-pattern>
+  <exclude-pattern>**/*.min.*</exclude-pattern>
+  <exclude-pattern>wp-content/plugins/**/build/*</exclude-pattern>
+</ruleset>
